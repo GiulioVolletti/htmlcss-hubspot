@@ -9,13 +9,13 @@ body {
   height: 150vh;
   background-color: lightgreen;
   background-image: linear-gradient(to right ,#00A5BC, #01BDA6);
-  position: relative;
 }
 /* header */
 header {
   width: 100%;
-  height: 20%;
-  background-color: brown;
+  /* height: 50vh; */
+  /* background-color: brown; */
+  position: relative;
 }
 
 .fixed-bar {
@@ -31,11 +31,36 @@ header {
   margin-top: 100px;
   width: 100%;
   height: 100px;
-  background-color: pink;
+  background-color: #EAF0F6;
 }
+.bottom-header{
+  width: 100%;
+  height: 700px;
+  /* float: left; */
+  background-image: url(../img/jumbotron.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* header::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
 /* /header */
 
+.container {
+  width: 60%;
+  background-color: blue;
+  margin: auto;
+}
+
 /* main */
+main {
+  padding-top: 100px;
+}
 section#main-top {
   margin-top: 100px;
   width: 100%;
