@@ -36,12 +36,11 @@ header {
 /* /header */
 
 /* main */
-
 section#main-top {
   margin-top: 100px;
   width: 100%;
   height: 800px;
-  background-color: white;
+  background-color: #F5F8FA;
 }
 section#main-center {
   width: 100%;
@@ -52,5 +51,14 @@ section#main-center {
 section#main-bottom {
   width: 100%;
   height: 400px;
-  background-color: white;
+  background-color: #000000;
+}
+
+/* /main */
+
+/* footer */
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #2D3E50;
 }
