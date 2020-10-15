@@ -59,14 +59,41 @@ header {
 
 /* main */
 main {
+  border-top: 2px solid green;
   padding-top: 100px;
 }
+/* top section */
 section#main-top {
   margin-top: 100px;
   width: 100%;
-  height: 800px;
+  height: 900px;
   background-color: #F5F8FA;
 }
+.first-top {
+  text-align: center;
+}
+
+.second-top{
+  height: 100px;
+  margin-top: 40px;
+  background-color: white;
+  border: 2px solid green;
+}
+
+.column {
+  width: 32%;
+  height: 200px;
+  background-color: white;
+  margin: 10px 0 10px 9px;
+  float:left;
+}
+
+.third-top::after {
+  content:"";
+  display: table;
+  clear: both;
+}
+/* /top section */
 section#main-center {
   width: 100%;
   height: 400px;
