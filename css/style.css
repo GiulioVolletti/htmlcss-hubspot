@@ -179,7 +179,8 @@ section#main-top {
 .second-top{
   margin-top: 40px;
   background-color: white;
-  border: 2px solid green;
+  border: 2px solid #F4F9FD;
+  border-radius: 2%;
 }
 #mid-container {
   padding-top: 20px;
@@ -197,15 +198,23 @@ section#main-top {
   position: relative;
 }
 .column {
-  width: 32%;
-  /* height: 220px; */
+  width: calc(33.33% - 9px);
   background-color: white;
   margin: 10px 0 10px 9px;
   float:left;
   text-align: center;
+  border: 2px solid #F4F9FD;
+  border-radius: 2%;
+  padding: 40px;
+}
+.column:first-child{
+  margin-left: 0;
 }
 .column > p {
   border-bottom: 2px solid grey;
+}
+.column > h3 {
+  margin-top: 20px;
 }
 .img-reduction {
   width: 40px;
@@ -238,18 +247,30 @@ section#main-bottom {
   display: inline-block;
 }
 #statistic {
-  width: 25%;
-  text-align: center;
+  width: 30%;
+  padding: 60px ;
+  text-align: left;
 }
-#partner {
-  width: 50%
-
+#customer {
+  width: 70%;
+  margin-top:60px;
+  text-align: right;
+}
+#customer img {
+  height: auto;
+  width: calc(20% - 40px);
+  margin: 20px;
+  vertical-align: middle;
 }
 /* /top section bottom */
 
 #bottom-float {
   width: 40%;
 }
+.descri > p:last-child {
+  font-size: 12px;
+}
+
 .float-left {
   float: left;
 }
