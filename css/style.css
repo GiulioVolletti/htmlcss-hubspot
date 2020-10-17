@@ -25,6 +25,14 @@ h2 {
 }
 
 a.btm {
+  padding: 20px;
+  border: 2px solid #FE775A;
+  border-radius: 10%;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 10px;
+}
+a.btm-fixed {
   padding: 10px;
   border: 2px solid #FE775A;
   border-radius: 10%;
@@ -96,7 +104,8 @@ p {
 
 .fixed-bar {
   width: 100%;
-  background-color: #F4F9FD;
+  height: 60px;
+  background-color: #EAF0F6;
   position: fixed;
   top: 0;
   left: 0;
@@ -111,7 +120,7 @@ p {
   width: 100%;
   height: 70px;
   position: relative;
-  background-color: #EAF0F6;
+  background-color: #F4F9FD;
 }
 
 .nav-bar > img {
@@ -130,6 +139,9 @@ p {
 }
 #header-float {
   width: 50%;
+}
+#header-float > p:last-child {
+  font-size: 12px;
 }
 .bottom-header::after {
   content: "";
@@ -215,14 +227,29 @@ section#main-center {
   text-align: center;
   color: white;
 }
+/* main bottom section */
 section#main-bottom {
   width: 100%;
   background-color: #F5F8FA;
 }
+
+/* top section bottom */
+.first-m-bottom > div {
+  display: inline-block;
+}
+#statistic {
+  width: 25%;
+  text-align: center;
+}
+#partner {
+  width: 50%
+
+}
+/* /top section bottom */
+
 #bottom-float {
   width: 40%;
 }
-
 .float-left {
   float: left;
 }
@@ -233,6 +260,7 @@ section#main-bottom {
   height: 400px;
   width: auto;
 }
+/* main bottom section */
 /* /main */
 
 /* footer */
