@@ -5,7 +5,7 @@
 }
 
 /* most used */
-h1, h2, p, a {
+h1, h2, h3, p, a {
   font-family: 'Lato', sans-serif;
 }
 h1{
@@ -399,4 +399,29 @@ footer hr {
 }
 .copyright > p {
   margin: 0;
+}
+#question {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  background-color: grey;
+  color: white;
+  font-size: 25px;
+}
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#one-translate {
+  transform: translate(-40%, -50%);
+}
+#two-translate {
+  transform: translate(-60%, -40%);
+}
+.fa-comment-alt:hover {
+  cursor: pointer;
 }
