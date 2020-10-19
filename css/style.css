@@ -5,18 +5,28 @@
 }
 
 /* most used */
+h1, h2, p, a {
+  font-family: 'Lato', sans-serif;
+}
 h1{
   font-size: 50px;
   font-weight: bold;
   padding: 20px 0 20px 0;
 }
 h2 {
+  margin: 20px 0;
   font-size: 35px;
   font-weight: bold;
 }
 .container {
   width: 70%;
   margin: auto;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
 }
 .clearfix::after {
   content: "";
@@ -40,10 +50,18 @@ a.btm-fixed {
   text-decoration: none;
   line-height: 10px;
 }
+a:hover {
+  text-decoration: underline;
+}
 .orange {
   color: white;
   background-color: #FE775A;
-  margin-bottom: 20px;
+}
+.orange:hover {
+  background-color: rgba(254, 119, 90, 0.6);
+}
+.white:hover{
+  background-color: rgba(254, 219, 250, 0.6);
 }
 .white{
   color: orange;
@@ -52,45 +70,21 @@ a.btm-fixed {
 }
 /* /most used */
 
-body {
-  width: 100%;
-}
-
 /* header */
 header {
-  width: 100%;
   position: relative;
 }
-
-/* fixed bar */
 
 ul {
   list-style: none;
   display: inline-block;
 }
-
-ul.left-fixed {
-  color: grey;
-  float: right;
-  line-height: 70px;
-}
-
-.fa-search{
-  color: green;
-  padding: 20px;
-}
-
 li {
   text-align: center;
   height: 50px;
-  line-height: 50px;
+  line-height: 60px;
   display: inline-block;
 }
-
-.right-fixed li:first-child {
-  border-right: 2px solid grey;
-}
-
 a {
   text-decoration: none;
   color: grey;
@@ -103,9 +97,24 @@ p {
   line-height: 1.8;
 }
 
+/* fixed bar */
+ul.left-fixed {
+  color: grey;
+  float: right;
+}
+
+.fa-search{
+  color: green;
+  padding: 20px;
+}
+
+#first-child-bar {
+  border-right: 2px solid grey;
+}
+
 .fixed-bar {
   width: 100%;
-  height: 60px;
+  padding: 10px 0;
   background-color: #EAF0F6;
   position: fixed;
   top: 0;
@@ -113,12 +122,11 @@ p {
   z-index: 2;
   border-bottom: 2px solid green;
 }
-
 /* /fixed bar */
 
+/* header */
 .top-header {
-  margin-top: 55px;
-  width: 100%;
+  margin-top: 72px;
   height: 70px;
   position: relative;
   background-color: #F4F9FD;
@@ -131,12 +139,12 @@ p {
 }
 
 .bottom-header {
-  width: 100%;
   height: 700px;
   background-image: url(../img/jumbotron.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:right;
+  background-color: #FFF4EF;
 }
 #header-float {
   width: 50%;
@@ -150,7 +158,7 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70px;
+  height: 80px;
   background-color: #AFEBE4;
   border-top: 2px solid #33475B;
   border-bottom: 2px solid #33475B;
@@ -158,10 +166,8 @@ p {
 /* /header */
 
 /* main */
-
 /* main top section */
 section#main-top {
-  width: 100%;
   background-color: #F5F8FA;
 }
 .container-half {
@@ -177,7 +183,7 @@ section#main-top {
   margin: auto;
 }
 
-.second-top{
+.second-top {
   margin-top: 40px;
   background-color: white;
   border: 2px solid #F4F9FD;
@@ -196,7 +202,9 @@ section#main-top {
 #inline-hr {
   display: inline-block;
   width: 60%;
-  color: grey;
+  background-color: grey;
+  margin-left: 20px;
+  vertical-align: middle;
 }
 .inline-block {
   display: inline-block;
@@ -273,10 +281,12 @@ section#main-center {
   margin: 0;
   font-size: 14px;
 }
-.table-contain h1::after {
+
+.table-contain h2::after {
   content: "+";
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 5px;
+  vertical-align: middle;
 }
 .table-contain:nth-child(1n+1) {
   border-left: none;
@@ -295,10 +305,8 @@ section#main-center {
 
 /* main bottom section */
 section#main-bottom {
-  width: 100%;
   background-color: #F5F8FA;
 }
-
 /* top section bottom */
 .first-m-bottom > div {
   display: inline-block;
@@ -328,12 +336,6 @@ section#main-bottom {
   font-size: 12px;
 }
 
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
-}
 .float-right img{
   height: 350px;
   width: auto;
@@ -378,7 +380,7 @@ footer a {
 .language a {
   margin-left: 10px;
 }
-hr {
+footer hr {
   color: #85939E;
 }
 .copyright {
