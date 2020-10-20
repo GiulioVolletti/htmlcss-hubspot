@@ -378,24 +378,30 @@ footer a {
   margin-top: 40px;
 }
 .language a {
+  color: #DADEE0;
   margin-left: 10px;
 }
 footer hr {
-  color: #85939E;
+  color: #DADEE0;
+  background-color: #DADEE0;
+}
+.colum-footer a {
+  color: #DADEE0;
 }
 .copyright {
   padding: 30px 0;
   width: 40%;
-  color: white;
 }
 .copyright.float-left{
   text-align: left;
+  color: #DADEE0;
 }
 .copyright.float-right{
   text-align: right;
 }
 .copyright > a {
   margin-left: 20px;
+  color: #DADEE0;
 }
 .copyright > p {
   margin: 0;
